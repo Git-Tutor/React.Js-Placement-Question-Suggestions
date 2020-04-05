@@ -6305,3 +6305,23 @@ Because the declarative approach separates concerns, this part of it only needs 
      2. Use of interfaces for complex type definitions
      3. IDEs such as VS Code was made for TypeScript
      4. Avoid bugs with the ease of readability and Validation
+     
+     
+     
+##### Extras:
+
+TIL: There is a special top-level domain that will always return a DNS error
+I've been working on a recent project where I need to crawl the web at scale. One of the challenges is testing all of the things that can go wrong. You might already known about httpbin.org for testing HTTP status codes and cool stuff like that, but what about lower down, like DNS errors? That's when I stumbled across the .invalid top level domain.
+
+Any domain with a .invalid top level domain will always return a DNS error [0].
+
+This has proven very useful for testing. Try it out:
+```
+> curl "http://example.invalid" -I
+curl: (6) Could not resolve host: example.invalid
+```
+I never knew about this and thought I would share it.
+
+
+
+0. https://tools.ietf.org/html/rfc2606
