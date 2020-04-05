@@ -6306,7 +6306,7 @@ Because the declarative approach separates concerns, this part of it only needs 
      3. IDEs such as VS Code was made for TypeScript
      4. Avoid bugs with the ease of readability and Validation
      
-     
+   **[⬆ Back to Top](#table-of-contents)**     
      
 ##### Extras:
 
